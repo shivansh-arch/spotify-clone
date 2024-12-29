@@ -2,7 +2,7 @@ console.log('Lets write JavaScript');
 let currentSong = new Audio();
 let songs;
 let currFolder;
-let playButton = document.getElementById("play");
+
 if (chrome.runtime && chrome.runtime.sendMessage) { chrome.runtime.sendMessage({greeting: "hello"}, function(response) { console.log(response); }); } else { console.error("Receiving end does not exist."); }
 
 
