@@ -60,7 +60,10 @@ async function getSongs(folder) {
 }
 
 const playMusic = (track, pause = false) => {
+    console.log("Track:", track);
+    console.log("Current Folder:", currFolder);
     currentSong.src = `/${currFolder}/` + track;
+    console.log("Current Song Source:", currentSong.src);
     if (!pause) {
         currentSong.play();
         play.src = "pause.svg";
