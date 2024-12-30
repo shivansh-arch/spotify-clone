@@ -1,6 +1,8 @@
 let currentSong = new Audio();
 let songs;
 let currFolder;
+console.log(currentSong.src);
+
 
 function secondsToMinutesSeconds(seconds) {
     if (isNaN(seconds) || seconds < 0) {
